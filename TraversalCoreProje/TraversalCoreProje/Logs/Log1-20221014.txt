@@ -1,0 +1,251 @@
+2022-10-14T12:53:25.6811319+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T12:53:25.7073073+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T12:53:25.7074931+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T12:54:11.6156374+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T12:54:11.6238136+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T12:54:11.6239360+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T12:54:41.4950307+03:00 80000008-0001-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DataAccessLayer.EntityFramework.EfGuideDal.ChangeToFalseByGuide(Int32 id) in C:\Users\ASUS\source\repos\TraversalCoreProje\DataAccessLayer\EntityFramework\EfGuideDal.cs:line 19
+   at BusinessLayer.Concrete.GuideManager.TChangeToFalseByGuide(Int32 id) in C:\Users\ASUS\source\repos\TraversalCoreProje\BusinessLayer\Concrete\GuideManager.cs:line 28
+   at TraversalCoreProje.Areas.Admin.Controllers.GuideController.ChangeToFalse(Int32 id) in C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje\Areas\Admin\Controllers\GuideController.cs:line 72
+   at lambda_method320(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-14T12:54:49.6741745+03:00 8000000e-0000-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DataAccessLayer.EntityFramework.EfGuideDal.ChangeToTrueByGuide(Int32 id) in C:\Users\ASUS\source\repos\TraversalCoreProje\DataAccessLayer\EntityFramework\EfGuideDal.cs:line 27
+   at BusinessLayer.Concrete.GuideManager.TChangeToTrueByGuide(Int32 id) in C:\Users\ASUS\source\repos\TraversalCoreProje\BusinessLayer\Concrete\GuideManager.cs:line 33
+   at TraversalCoreProje.Areas.Admin.Controllers.GuideController.ChangeToTrue(Int32 id) in C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje\Areas\Admin\Controllers\GuideController.cs:line 67
+   at lambda_method325(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-14T12:56:14.7944949+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T12:56:14.8051312+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T12:56:14.8052763+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T12:56:21.1503949+03:00 8000000c-0001-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DataAccessLayer.EntityFramework.EfGuideDal.ChangeToFalseByGuide(Int32 id) in C:\Users\ASUS\source\repos\TraversalCoreProje\DataAccessLayer\EntityFramework\EfGuideDal.cs:line 19
+   at BusinessLayer.Concrete.GuideManager.TChangeToFalseByGuide(Int32 id) in C:\Users\ASUS\source\repos\TraversalCoreProje\BusinessLayer\Concrete\GuideManager.cs:line 28
+   at TraversalCoreProje.Areas.Admin.Controllers.GuideController.ChangeToFalse(Int32 id) in C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje\Areas\Admin\Controllers\GuideController.cs:line 72
+   at lambda_method109(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-14T12:58:21.5352794+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T12:58:21.5450413+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T12:58:21.5452071+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T13:03:02.8316593+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T13:03:02.8432327+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T13:03:02.8434018+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T13:04:52.6207550+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T13:04:52.6264732+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T13:04:52.6265637+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T13:09:23.5140748+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T13:09:23.5334643+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T13:09:23.5338321+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T13:09:37.5294187+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T13:09:37.5362644+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T13:09:37.5363738+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T13:11:56.9193113+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T13:11:56.9329698+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T13:11:56.9331387+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T13:12:50.2251011+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T13:12:50.2344077+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T13:12:50.2352117+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T13:13:32.4463027+03:00 80000017-0006-ff00-b63f-84710c7967bb [ERR] The view '"EditGuide"' was not found. Searched locations: ["/Areas/Admin/Views/Guide/EditGuide.cshtml", "/Areas/Admin/Views/Shared/EditGuide.cshtml", "/Views/Shared/EditGuide.cshtml", "/Pages/Shared/EditGuide.cshtml"] (9bb2756c)
+2022-10-14T13:13:32.4725605+03:00 80000017-0006-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'EditGuide' was not found. The following locations were searched:
+/Areas/Admin/Views/Guide/EditGuide.cshtml
+/Areas/Admin/Views/Shared/EditGuide.cshtml
+/Views/Shared/EditGuide.cshtml
+/Pages/Shared/EditGuide.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-14T13:13:50.8802741+03:00 80000010-0002-f800-b63f-84710c7967bb [ERR] The view '"EditGuide"' was not found. Searched locations: ["/Areas/Admin/Views/Guide/EditGuide.cshtml", "/Areas/Admin/Views/Shared/EditGuide.cshtml", "/Views/Shared/EditGuide.cshtml", "/Pages/Shared/EditGuide.cshtml"] (9bb2756c)
+2022-10-14T13:13:50.8812634+03:00 80000010-0002-f800-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'EditGuide' was not found. The following locations were searched:
+/Areas/Admin/Views/Guide/EditGuide.cshtml
+/Areas/Admin/Views/Shared/EditGuide.cshtml
+/Views/Shared/EditGuide.cshtml
+/Pages/Shared/EditGuide.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-14T13:14:23.8992129+03:00 80000002-0003-fd00-b63f-84710c7967bb [ERR] The view '"EditGuide"' was not found. Searched locations: ["/Areas/Admin/Views/Guide/EditGuide.cshtml", "/Areas/Admin/Views/Shared/EditGuide.cshtml", "/Views/Shared/EditGuide.cshtml", "/Pages/Shared/EditGuide.cshtml"] (9bb2756c)
+2022-10-14T13:14:23.9004742+03:00 80000002-0003-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'EditGuide' was not found. The following locations were searched:
+/Areas/Admin/Views/Guide/EditGuide.cshtml
+/Areas/Admin/Views/Shared/EditGuide.cshtml
+/Views/Shared/EditGuide.cshtml
+/Pages/Shared/EditGuide.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-14T15:21:24.4148808+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T15:21:24.4226034+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T15:21:24.4227223+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T15:22:03.8367040+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T15:22:03.8477687+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T15:22:03.8479811+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T15:24:16.7433484+03:00 80000028-0004-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+MailKit.Security.AuthenticationException: 535: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials m3-20020a170906160300b0078194737761sm1434701ejd.124 - gsmtp
+ ---> MailKit.Net.Smtp.SmtpCommandException: 5.7.8 Username and Password not accepted. Learn more at
+5.7.8  https://support.google.com/mail/?p=BadCredentials m3-20020a170906160300b0078194737761sm1434701ejd.124 - gsmtp
+   --- End of inner exception stack trace ---
+   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.Authenticate(Encoding encoding, ICredentials credentials, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(Encoding encoding, String userName, String password, CancellationToken cancellationToken)
+   at MailKit.MailService.Authenticate(String userName, String password, CancellationToken cancellationToken)
+   at TraversalCoreProje.Areas.Admin.Controllers.MailController.Index(MailRequest mailRequest) in C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje\Areas\Admin\Controllers\MailController.cs:line 34
+   at lambda_method54(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-10-14T15:29:50.0325998+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T15:29:50.0409203+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T15:29:50.0410335+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T15:32:27.5190096+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T15:32:27.5260492+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T15:32:27.5262064+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T15:34:00.8584014+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T15:34:00.8690861+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T15:34:00.8693117+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T15:38:54.0491757+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T15:38:54.0571139+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T15:38:54.0572695+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T17:27:30.8525847+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T17:27:30.8919682+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T17:27:30.8921264+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T17:29:21.6128496+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T17:29:21.6193727+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T17:29:21.6194858+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T17:29:54.1797681+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T17:29:54.1890272+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T17:29:54.1891994+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T17:30:40.4645531+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T17:30:40.4706660+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T17:30:40.4707820+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)
+2022-10-14T17:31:25.3580168+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-10-14T17:31:25.3706629+03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-10-14T17:31:25.3708384+03:00  [INF] Content root path: "C:\Users\ASUS\source\repos\TraversalCoreProje\TraversalCoreProje" (b5d60022)

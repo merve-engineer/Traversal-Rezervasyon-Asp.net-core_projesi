@@ -1,0 +1,9 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DataAccessLayer",
+    "\\DataAccessLayer\\Abstract"
+  ],
+  "SelectedNode": "\\DataAccessLayer\\Abstract\\IReservationDal.cs",
+  "PreviewInSolutionExplorer": false
+}

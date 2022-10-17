@@ -20,11 +20,20 @@ namespace TraversalCoreProje.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogError("Error log çağrıldı");
+            _logger.LogInformation( "Index sayfası çagırıldı");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            DateTime d = Convert.ToDateTime(DateTime.Now.ToLongDateString());
+            _logger.LogInformation(d + "Privacy sayfası çagırıldı");
+            return View();
+        }
+        public IActionResult Test()
+        {
+            _logger.LogInformation("Test sayfası çağrıldı");
             return View();
         }
 

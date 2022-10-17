@@ -14,9 +14,7 @@ namespace DataAccessLayer.Concrete
         protected override void OnConfiguring
             (DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=LAPTOP-OL4IBE58" +
-                "\\SQLEXPRESS;database=TraversaalDB;integrated security=true;");
-
+            optionsBuilder.UseSqlServer("server= LAPTOP-V0DLGIOL" + "\\MSSQLSERVER02;database=TraversaalDB;integrated security=true;");
         }
 
         public DbSet<About> Abouts { get; set; } 
